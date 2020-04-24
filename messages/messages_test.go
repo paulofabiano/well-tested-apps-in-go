@@ -1,3 +1,10 @@
+// Other useful functions
+// - Log and Logf
+// - Helper
+// - Skip, Skipf and SkipNow
+// Run
+// Parallel
+
 package messages
 
 import "testing"
