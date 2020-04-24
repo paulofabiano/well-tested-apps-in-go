@@ -2,6 +2,12 @@
 // $ go test -bench (running)
 // $ go test -bench -benchtime 10s (targeting specified time)
 
+// Others
+// go test -benchmem (memory allocation)
+// go test -trace {trace.out} (record execution trade for analysis)
+// go test -{type}profile {file} (generate profile of requested type)
+//    types: block, cover, cpu, mem, mutex
+
 package benchmarking
 
 import (
