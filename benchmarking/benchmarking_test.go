@@ -40,3 +40,12 @@ func BenchmarkSHA512(b *testing.B) {
 		sha512.Sum512(data)
 	}
 }
+
+func BenchmarkSHA512Alloc(b *testing.B) {
+	data := []byte("Marry had a little lamb")
+	b.StartTimer()
+	for i := 0; i < b.N; i++ {
+		h := sha512.New()
+		h.Sum(data)
+	}
+}
