@@ -8,6 +8,10 @@
 // go test -{type}profile {file} (generate profile of requested type)
 //    types: block, cover, cpu, mem, mutex
 
+// Profiling information
+// $ go test -bench Alloc -memprofile profile.
+// $ go tool pprof profile.out
+
 package benchmarking
 
 import (
